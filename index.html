@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <h1>My Image Gallery</h1>
+      
+        <div class="filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="bird">Bird</button>
+          <button class="filter-btn" data-category="amphibian">Amphibian</button>
+          <button class="filter-btn" data-category="animal">Animals</button>
+        </div>
+      
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="Search images...">
+        </div>
+      
+        <div class="gallery" id="gallery">
+          <img src="./asset/bird.jpg" loading="lazy" alt="Tree" data-category="bird" data-title="Bird">
+          <img src="./asset/frog.jpg" loading="lazy" alt="Lion" data-category="amphibian" data-title="Frog">
+          <img src="./asset/duck.jpg" loading="lazy" alt="Cityscape" data-category="bird" data-title="Duck">
+          <img src="./asset/Tiger.jpg" loading="lazy" alt="Forest" data-category="animal" data-title="Tiger">
+          <img src="./asset/dear.jpg" loading="lazy" alt="Dog" data-category="animal" data-title="Dear">
+          <img src="./asset/hen.jpg" loading="lazy" alt="Building" data-category="bird" data-title="Hen">
+        </div>
+      
+        <div class="modal" id="modal">
+          <span class="close" id="closeBtn">&times;</span>
+          <span class="nav" id="prevBtn">&#10094;</span>
+          <img class="modal-content" id="modalImage">
+          <span class="nav" id="nextBtn">&#10095;</span>
+        </div>
+    </body>
+    <script src="Script.js"></script>
+  </body>
+</html>
